@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Thông tin sinh viên -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin sinh viên"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:padding="10dp" />
+
+    <!-- Họ và tên -->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ và tên"
+        android:minHeight="48dp"
+        android:inputType="text|textNoSuggestions"/>
+
+    <!-- MSSV -->
+    <EditText
+        android:id="@+id/edtMSSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MSSV"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <!-- Lớp -->
+    <EditText
+        android:id="@+id/edtClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lớp"
+        android:minHeight="48dp" />
+
+    <!-- Sinh viên năm -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sinh viên năm" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioYear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm 1" />
+
+        <RadioButton
+            android:id="@+id/radioYear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm 2" />
+
+        <RadioButton
+            android:id="@+id/radioYear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm 3" />
+
+        <RadioButton
+            android:id="@+id/radioYear4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm 4" />
+    </RadioGroup>
+
+    <!-- Chuyên ngành -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chuyên ngành" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkMTHTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MT HTN" />
+
+        <CheckBox
+            android:id="@+id/checkDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DT" />
+
+        <CheckBox
+            android:id="@+id/checkVT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VT" />
+    </LinearLayout>
+
+    <!-- Kế hoạch phát triển bản thân -->
+    <EditText
+        android:id="@+id/edtPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kế hoạch phát triển bản thân"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <!-- Gửi thông tin -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gửi thông tin"
+        android:layout_gravity="center" />
+
+</LinearLayout>
